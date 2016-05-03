@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <p>
+      <strong>División de Telecomunicaciones y Redes</strong>
+      <br/>
+      <br/>
+      <% fecha = Time.now; %> 
+      <%= l(fecha, format: :largo).capitalize + ', '.html_safe + l(fecha, format: :hora).downcase %>
+      <br/>
+      <br/>
+      <br/>
+      Estimados Funcionarios:
+    </p>
+    <p>
+      Un proceso automático ha detectado el ingreso, egreso, jubilación o movimiento de personal
+      desde o hacia "CENTRAL - SEDE PANTEÓN" o "AMC - SEDE CRUZ VERDE, EDF. PALACIO DE JUSTICIA",
+      de trabajadores de la Defensa Pública. Se adjunta archivo CSV con estos hallazgos.
+      <br/>
+    </p>
+
+    <%= render 'saludos' %>
+  </body>
+</html>
