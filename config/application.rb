@@ -35,15 +35,11 @@ module Sadnie
     
     config.action_mailer.smtp_settings = {
       :address              => "correo.defensapublica.gob.ve",
-#      :address              => "192.168.16.8",
       :port                 =>  465, #25, #465, 25,
       :domain               => 'correo.defensapublica.gob.ve',
-#      :domain               => '192.168.16.8',
       :user_name            => 'no-reply', # 'sistemas',
-#      :user_name            => 'carlos.bagnoli', # 'sistemas',
-      :password             => '12qwaszx',   # 'sistemasdp1234', # 'dp1234dp',
+      :password             => '',
       :authentication       => 'plain',
-#      :authentication       => :login ,
       :ssl => true,
       :enable_starttls_auto => false, # Si lo colocaba en true daba este error= OpenSSL::SSL::SSLError (hostname does not match the server certificate)
 #      :openssl_verify_mode  => OpenSSL::SSL::VERIFY_CLIENT_ONCE,
